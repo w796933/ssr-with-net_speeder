@@ -12,7 +12,7 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 EXPOSE 22
 
 #get shadowsocksr
-RUN git clone -b manyuser https://github.com/breakwa11/shadowsocks.git /root/ssr
+RUN git clone -b manyuser https://github.com/w796933/shadowsocksr.git /root/ssr
 
 #install net-speeder
 RUN git clone https://github.com/snooda/net-speeder.git /net-speeder
